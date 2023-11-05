@@ -1,2 +1,54 @@
-# go-cli
+# 📕 go-cli
 go-cli 用 Go 打造的第一个命令行工具
+
+# 📕 安裝
+首先下載安裝檔 https://golang.org/dl/
+
+安裝完輸入(基本上不會設錯)
+```bash=
+go env
+```
+看看 GOROOT="C:\Go" 與 GOPATH="C:\users\youName\go" 是否正確(基本上不會設錯)
+
+程式碼在 main.go 檔案
+
+# 📕 初始化專案
+
+```shell=
+go mod init "專案名稱"
+```
+
+# 安裝模組
+```shell=
+go get -u github.com/spf13/cobra@latest
+```
+
+# 安裝 Cobra-cli
+```shell=
+go install github.com/spf13/cobra-cli@latest
+```
+可以直接產生範例程式碼到專案的 cmd 目錄下
+```shell=
+cobra-cli add hi
+```
+
+# 📕 編譯專案
+```shell=
+go build
+```
+
+# 📕 執行 CLI
+```shell=
+./go-cli
+```
+
+# 📕 CLI 帶入參數
+```shell=
+./go-cli -v
+```
+
+
+
+
+
+
