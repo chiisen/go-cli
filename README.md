@@ -18,7 +18,7 @@ go env
 go mod init "專案名稱"
 ```
 
-# 安裝模組
+# 安裝 Cobra 模組
 ```shell=
 go get -u github.com/spf13/cobra@latest
 ```
@@ -27,7 +27,7 @@ go get -u github.com/spf13/cobra@latest
 ```shell=
 go install github.com/spf13/cobra-cli@latest
 ```
-可以直接產生範例程式碼到專案的 cmd 目錄下
+可以直接產生範例程式碼 hi.go 到專案的 cmd 目錄下
 ```shell=
 cobra-cli add hi
 ```
@@ -42,11 +42,15 @@ go build
 ./go-cli
 ```
 
-# 📕 CLI 帶入參數
+# 📕 CLI 顯示版本號
 ```shell=
 ./go-cli -v
 ```
 
+# 📕 CLI 帶入參數
+```shell=
+./go-cli --name Sam
+```
 
 
 
