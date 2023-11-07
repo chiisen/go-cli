@@ -3,6 +3,14 @@ go-cli 用 Go 打造的第一个命令行工具
 
 # 📕 安裝
 首先下載安裝檔 https://golang.org/dl/
+安裝 go 1.21.3 或以上的版本
+
+如果版本太低會報錯
+```
+go: errors parsing go.mod:
+C:\github\go-cli\go.mod:3: invalid go version '1.21.3': must match format 1.23
+```
+安裝指定版本後就可以編譯了
 
 安裝完輸入(基本上不會設錯)
 ```bash=
