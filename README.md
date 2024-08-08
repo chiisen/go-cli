@@ -44,6 +44,22 @@ cobra-cli add hi
 ```shell=
 go build
 ```
+或
+```shell=
+go build -o go-cli.exe
+```
+-o：這個選項用於指定輸出檔案的名稱和位置。
+
+# 全域執行
+```shell=
+move go-cli.exe C:\Windows\System32
+```
+遇到【存取被拒】可以在以系統管理員身份運行的命令提示字元中，執行以下命令。
+或可以選擇其他目錄，然後將該目錄添加到 PATH 環境變數中：
+例如: 將檔案移動到其他目錄，例如 C:\MyGoTools：
+```shell=
+move go-cli.exe C:\MyGoTools
+```
 
 # 📕 執行 CLI
 ```shell=
