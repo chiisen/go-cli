@@ -23,6 +23,9 @@ func Execute() {
 	}
 }
 
+// 這行代碼的功能是為 rootCmd 命令添加一個名為 name 的字符串標誌（flag）。
+// 這個標誌允許用戶在命令行中指定一個名稱，如果用戶沒有提供，則默認值為 "world"。
 func init() {
+	// 添加一個名為 "name" 的字符串標誌，默認值為 "world"
 	rootCmd.Flags().StringVarP(&name, "name", "", "world", "")
 }
